@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=LM Studio
+Comment=Run local language models from a desktop application.
+Exec=lm-studio %U
+Icon=lm-studio
+Terminal=false
+Categories=Development;Utility;
+

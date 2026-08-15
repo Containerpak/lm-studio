@@ -12,6 +12,10 @@ FROM ghcr.io/containerpak/gtk3:main
 
 LABEL org.opencontainers.image.source="https://github.com/Containerpak/lm-studio"
 
+RUN apt-get update && \
+    apt-get install -y --no-install-recommends libnspr4 libnss3 && \
+    cpak-clean-junk
+
 COPY --from=source /stage/ /opt/lm-studio/
 COPY lm-studio /usr/bin/lm-studio
 COPY lm-studio.desktop /usr/share/applications/lm-studio.desktop

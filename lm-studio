@@ -1,3 +1,2 @@
 #!/bin/sh
-exec /opt/lm-studio/AppRun "$@"
-
+APPDIR=/opt/lm-studio exec /opt/lm-studio/AppRun "$@"

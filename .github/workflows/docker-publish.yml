@@ -50,7 +50,7 @@ jobs:
           provenance: mode=max
           sbom: true
       - name: Verify package
-        run: docker run --rm ghcr.io/containerpak/lm-studio:main sh -c 'test -x /usr/bin/lm-studio && test -f /usr/share/applications/lm-studio.desktop'
+        run: docker run --rm ghcr.io/containerpak/lm-studio:main sh -c 'test -x /usr/bin/lm-studio && test ! -e /opt/LM-Studio/lm-studio && test -f /usr/share/applications/lm-studio.desktop'
       - name: Publish summary
         run: echo "ghcr.io/containerpak/lm-studio@${{ steps.build.outputs.digest }}" >> "${GITHUB_STEP_SUMMARY}"
 

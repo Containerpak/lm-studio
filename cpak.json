@@ -5,6 +5,16 @@
   "description": "Run local language models from a desktop application.",
   "version": "0.4.21-2",
   "image": "ghcr.io/containerpak/lm-studio:main",
+  "runtime_sources": [
+    {
+      "name": "LM-Studio-0.4.21-2-x64.deb",
+      "url": "https://installers.lmstudio.ai/linux/x64/0.4.21-2/LM-Studio-0.4.21-2-x64.deb",
+      "sha256": "16631c7cb37eb39bade7941365dc1f89fb6c8e139f12ba9df94a8ddd63115ed5",
+      "size": 653436220,
+      "installer": "deb-extract",
+      "architecture": "amd64"
+    }
+  ],
   "binaries": [
     "/usr/bin/lm-studio"
   ],
@@ -61,4 +71,3 @@
     "allowedHostCommands": []
   }
 }
-

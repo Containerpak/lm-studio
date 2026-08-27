@@ -1,10 +1,10 @@
 {
-  "$schema": "https://raw.githubusercontent.com/Containerpak/cpak/v2/schema/manifest-v2.json",
-  "manifest_version": "2.0",
+  "$schema": "https://raw.githubusercontent.com/Containerpak/cpak/v2/schema/manifest-v3.json",
+  "manifest_version": "3.0",
   "name": "LM Studio",
   "description": "Run local language models from a desktop application.",
   "version": "0.4.21-2",
-  "image": "ghcr.io/containerpak/lm-studio:main",
+  "image": "ghcr.io/containerpak/lm-studio@sha256:5cad70e755c08fb5b8ad0927c08de980c8baad6de860d5d780de5082824425a1",
   "runtime_sources": [
     {
       "name": "LM-Studio-0.4.21-2-x64.deb",
@@ -25,16 +25,11 @@
   "addons": [],
   "idle_time": 0,
   "override": {
-    "socketX11": true,
     "socketWayland": true,
     "socketPulseAudio": true,
-    "socketSessionBus": true,
-    "socketSystemBus": false,
     "socketSshAgent": false,
     "socketCups": false,
     "socketGpgAgent": false,
-    "socketAtSpiBus": true,
-    "socketBluetooth": false,
     "deviceDri": true,
     "deviceKvm": false,
     "deviceShm": true,
@@ -67,7 +62,6 @@
     "memoryMaxMB": 0,
     "cpuQuota": 0,
     "pidsMax": 0,
-    "asRoot": false,
-    "allowedHostCommands": []
+    "asRoot": false
   }
 }

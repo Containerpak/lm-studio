@@ -4,7 +4,7 @@
   "name": "LM Studio",
   "description": "Run local language models from a desktop application.",
   "version": "0.4.23+1",
-  "image": "ghcr.io/containerpak/lm-studio@sha256:afd066a0b7f66e831b2652fb13ee37650c62d263df994d000d4d9cdfad6f66d6",
+  "image": "ghcr.io/containerpak/lm-studio@sha256:480379af898655e9eb015cf04f90aff107c8f63db1b3f8e2455858d470ee1279",
   "runtime_sources": [
     {
       "name": "LM-Studio-0.4.23-1-x64.deb",

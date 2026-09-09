@@ -3,14 +3,14 @@
   "manifest_version": "3.0",
   "name": "LM Studio",
   "description": "Run local language models from a desktop application.",
-  "version": "0.4.23+1",
+  "version": "0.4.24+1",
   "image": "ghcr.io/containerpak/lm-studio@sha256:c50e8b2368edd8cc155215a5ed8252ca5afac0baa532060973c2a767408e81b0",
   "runtime_sources": [
     {
-      "name": "LM-Studio-0.4.23-1-x64.deb",
-      "url": "https://installers.lmstudio.ai/linux/x64/0.4.23-1/LM-Studio-0.4.23-1-x64.deb",
-      "sha256": "4e93d70f9d6af7fd6789cab11f2f6a05d03f0ca5a8d41971d2f116d31a49d15a",
-      "size": 765662060,
+      "name": "LM-Studio-0.4.24-1-x64.deb",
+      "url": "https://installers.lmstudio.ai/linux/x64/0.4.24-1/LM-Studio-0.4.24-1-x64.deb",
+      "sha256": "0dcf3dd50d7d5774897132d6cba2489c3abc1fc9e98eea44ab48be573b8d0a5d",
+      "size": 768482136,
       "installer": "deb-extract",
       "architecture": "amd64"
     }
